@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+/* PAGE ONE
+======================================= */
+  
+#page-one {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-one-header h1, #page-one-header h2 {
+    text-align: center;
+    margin: 50px 10px;
+}
+
+/* NAVIGATION
+======================================= */
+
+.list-item {
+    display: inline-block;
+    position: relative;
+    margin: 10px 20px;
+}
+
+/* PAGE TWO (NAV)
+======================================= */
+
+#page-two {
+  height: 80vh;
+}
+
+#page-two-nav {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  position: sticky;
+  top: 0px;
+}
+
+#page-two-nav header, #page-two-nav ul {
+  margin: 20px;
+}
+
+#page-two-header h2 {
+  text-align: center;
+}
+
+.page-two-list {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+/* PAGE TWO (ABOUT)
+======================================= */
+
+#about-header {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 55px;
+}
+
+#about-myself p{
+  width: 80%;
+  text-align: left;
+  margin: 0px 55px
+}

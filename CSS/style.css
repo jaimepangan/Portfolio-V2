@@ -1,0 +1,133 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Mulish', sans-serif; */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* PAGE ONE
+======================================  */
+
+#header-name {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    animation: fromLeft 1.5s ease-out;
+}
+
+#header-title {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    animation: fromRight 1.5s ease-out;
+}
+
+/* NAVIGATION
+====================================== */
+
+.list-item {
+    font-family: 'Merriweather', serif;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.list-item a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-item:hover {
+    transform: translate(5px, 5px);
+}
+
+.list-item::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(247, 202, 106, 0.879);
+    z-index: -1;
+    transition: transform .3s ease;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+.list-item:hover::before {
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+/* PAGE 2 NAVIGATION
+====================================== */
+
+/* #page-two {
+    animation: fadeIn 1.5s ease-out;
+} */
+
+.nav-header {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#page-two-header {
+    transition: transform 200ms ease-in;
+    cursor: pointer;
+}
+
+#page-two-header a {
+    text-decoration: none;
+    color: black;
+}
+
+#page-two-header a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.page-two-list {
+    font-family: 'Merriweather', serif;
+    font-size: .9rem;
+    transition: transform 200ms ease-in;
+    cursor: pointer;
+}
+
+.page-two-list a {
+    text-decoration: none;
+}
+
+.page-two-list a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.page-two-list:hover, #page-two-header:hover {
+    transform: translate(5px, 5px);
+}
+
+/* PAGE 2 ABOUT
+====================================== */
+
+#about-header span {
+    font-family: 'Merriweather', serif;
+    font-size: 5rem; 
+    font-weight: 500;
+    text-shadow: 15px 5px 35px grey;
+}
+
+@media only screen and (max-width: 650px) {
+    #about-header span {
+        font-size: 3.2rem;
+    }
+}
+
+#about-myself p {
+    font-family: 'Mulish', sans-serif;
+}
