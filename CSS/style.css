@@ -86,12 +86,12 @@ html {
     cursor: pointer;
 }
 
-#page-two-header a {
+.nav-class a {
     text-decoration: none;
     color: black;
 }
 
-#page-two-header a:visited {
+.nav-class a:visited {
     text-decoration: none;
     color: black;
 }
