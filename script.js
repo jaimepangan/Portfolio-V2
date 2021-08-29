@@ -13,7 +13,7 @@ const navPangan = document.getElementById('nav-header-Pangan')
 
 fullPage.onscroll =  function showPage() {
     let scrolled = scrollY;
-    console.log(scrolled)
+    // console.log(scrolled)
     if (scrolled >= 75) {
         pageTwo.style.animation = 'fadeIn 2s ease-in';
         fullPage.removeEventListener('scroll', showPage);

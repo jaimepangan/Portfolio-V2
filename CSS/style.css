@@ -26,6 +26,16 @@ html {
     animation: fromRight 1.5s ease-out;
 }
 
+@media only screen and (max-width: 480px) {
+    #header-name {
+        font-size: .9rem;
+    }
+    
+    #header-title {
+        font-size: 2.1rem;
+    }
+}
+
 /* NAVIGATION
 ====================================== */
 
@@ -35,6 +45,12 @@ html {
     font-weight: 400;
     cursor: pointer;
     transition: transform 200ms ease-in;
+}
+
+@media only screen and (max-width: 480px) {
+    .list-item {
+        font-size: .6rem;
+    }
 }
 
 .list-item a:visited {
@@ -81,6 +97,12 @@ html {
     font-weight: 900;
 }
 
+@media only screen and (max-width: 720px) {
+    .nav-header {
+        font-size: 1.1rem;
+    }
+}
+
 #page-two-header {
     transition: transform 200ms ease-in;
     cursor: pointer;
@@ -101,6 +123,12 @@ html {
     font-size: .9rem;
     transition: transform 200ms ease-in;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+    .page-two-list {
+        font-size: .7rem;
+    }
 }
 
 .page-two-list a {
@@ -134,4 +162,66 @@ html {
 
 #about-myself p {
     font-family: 'Mulish', sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+    #about-myself p {
+        font-size: .8rem;
+    }
+}
+
+/* EXPERIENCE
+====================================== */
+
+.experience-card h2{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-details {
+    line-height: 1.2rem;
+}
+
+.card-details h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.card-details h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.card-details p, .card-details li {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .experience-card h2{
+        font-size: 1.2rem;
+    }
+    
+    .card-details {
+        line-height: 1.2rem;
+    }
+    
+    .card-details h3 {
+        font-size: 1rem;
+    }
+    
+    
+    .card-details h4 {
+        font-size: .9rem;
+    }
+    
+    .card-details p, .card-details li {
+        font-size: .8rem;
+    }
 }

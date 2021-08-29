@@ -36,6 +36,12 @@ html {
     margin: 10px 20px;
 }
 
+@media only screen and (max-width: 480px) {
+  .list-item {
+    margin: 10px 10px;
+  }
+}
+
 /* PAGE TWO (NAV)
 ======================================= */
 
@@ -45,14 +51,33 @@ html {
 
 #page-two-nav {
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
   margin: 10px 0px;
   position: sticky;
   top: 0px;
 }
 
+@media only screen and (max-width: 380px) {
+  #page-two-nav {
+    flex-wrap: wrap;
+  }
+}
+
 #page-two-nav header, #page-two-nav ul {
   margin: 10px 55px;
+}
+
+@media only screen and (max-width: 720px) {
+  #page-two-nav header, #page-two-nav ul {
+    margin: 5px 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #page-two-nav header, #page-two-nav ul {
+    margin: 5px 5px;
+  }
 }
 
 #page-two-header h2 {
@@ -82,6 +107,12 @@ html {
   margin: 0px 55px
 }
 
+@media only screen and (max-width: 480px) {
+  #about-myself p{
+    margin: 0px 35px
+  }
+}
+
 /* PAGE THREE (EXPERIENCE)
 ======================================= */
 
@@ -109,7 +140,7 @@ html {
 .experience-card {
   margin: 25px;
   width: 350px;
-  height: 70vh;
+  /* height: 70vh; */
   border: 1px solid black;
   border-radius: 5%;
   display: grid;
@@ -120,8 +151,15 @@ html {
 
 @media only screen and (max-width: 1300px) {
   .experience-card {
+    width: 320px;
+    /* height: 72vh; */
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .experience-card {
     width: 250px;
-    height: 62vh;
+    /* height: 72vh; */
   }
 }
 
