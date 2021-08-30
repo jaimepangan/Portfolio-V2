@@ -11,6 +11,60 @@ html {
     height: 10vh;
   }
 
+  .bar-space-top {
+    height: 10px;
+  }
+
+  .bar-space {
+    height: 5px;
+  }
+
+/* MOBILE NAV */
+
+#mobile-nav {
+  position: sticky;
+  top: 0px;
+  /* height: 30vh; */
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #mobile-nav {
+    display: block;
+  }
+}
+
+#mobile-nav-section {
+  width: 4%;
+}
+
+.bar {
+  margin: 0px 6px;
+  width: 100%;
+}
+
+#mobile-nav-page {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-display {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 300ms ease-in;
+}
+
+.mobile-nav-active {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* PAGE ONE
 ======================================= */
   
@@ -58,26 +112,14 @@ html {
   top: 0px;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 800px) {
   #page-two-nav {
-    flex-wrap: wrap;
+    display: none;
   }
 }
 
 #page-two-nav header, #page-two-nav ul {
   margin: 10px 55px;
-}
-
-@media only screen and (max-width: 720px) {
-  #page-two-nav header, #page-two-nav ul {
-    margin: 5px 25px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #page-two-nav header, #page-two-nav ul {
-    margin: 5px 5px;
-  }
 }
 
 #page-two-header h2 {

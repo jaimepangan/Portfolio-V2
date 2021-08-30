@@ -20,7 +20,7 @@ fullPage.onscroll =  function showPage() {
     };
 
     if (scrolled >= 950) {
-        navBar.style.transition = 'background-color 600ms ease-out';
+        navBar.style.transition = 'background-color 400ms ease-out';
         navBar.style.backgroundColor = 'black';
         navAbout.style.color = 'white';
         navExperience.style.color = 'white';
@@ -40,4 +40,14 @@ fullPage.onscroll =  function showPage() {
     }
 }
 
+// MOBILE NAV BAR
+
+const navIcon = document.getElementById('mobile-nav-section');
+const navPage = document.getElementById('mobile-nav');
+const navItems = document.getElementById('display-mobile-nav');
+
+navIcon.onclick = function() {
+    navPage.classList.toggle('mobile-active');
+    navItems.classList.toggle('mobile-nav-active');
+}
 

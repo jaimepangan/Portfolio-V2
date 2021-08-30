@@ -10,6 +10,47 @@ html {
     border: 1px solid black
 }
 
+/* MOBILE NAV */
+
+.mobile-active {
+    background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+#mobile-nav {
+    background-color: black;
+}
+
+#mobile-nav-section {
+    cursor: pointer;
+}
+
+#mobile-nav-page {
+    background-color: hsla(0, 0%, 0%, 0.4);
+}
+
+.bar {
+    border: 1px solid white;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px;
+    background-color: blanchedalmond;
+}
+
+.mobile-nav-list a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
 /* PAGE ONE
 ======================================  */
 
