@@ -45,10 +45,16 @@ fullPage.onscroll =  function showPage() {
 const navIcon = document.getElementById('mobile-nav-section');
 const navPage = document.getElementById('mobile-nav');
 const navItems = document.getElementById('display-mobile-nav');
+const aboutMobile = document.getElementById('about-mobile');
+const experienceMobile = document.getElementById('experience-mobile');
 
-navIcon.onclick = function() {
+let clearNav = function() {
     navPage.classList.toggle('mobile-active');
     navItems.classList.toggle('mobile-nav-active');
     navItems.style.transition = 'all 300ms ease-in';
 }
+
+aboutMobile.onclick = clearNav;
+navIcon.onclick = clearNav;
+experienceMobile.onclick = clearNav;
 

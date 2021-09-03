@@ -10,6 +10,10 @@ html {
     border: 1px solid black
 }
 
+*:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* MOBILE NAV */
 
 .mobile-active {
@@ -58,7 +62,6 @@ html {
     font-family: 'Merriweather', serif;
     font-size: 1.5rem;
     animation: fromLeft 1.5s ease-out;
-    color: blue;
 }
 
 #header-title {
@@ -196,7 +199,7 @@ html {
     text-shadow: 15px 5px 35px grey;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 678px) {
     #about-header span {
         font-size: 3.2rem;
     }
@@ -206,7 +209,7 @@ html {
     font-family: 'Mulish', sans-serif;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 678px) {
     #about-myself p {
         font-size: .8rem;
     }
