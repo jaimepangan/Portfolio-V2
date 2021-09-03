@@ -55,14 +55,16 @@ html {
 }
 
 .mobile-nav-display {
+  opacity: 0;
   transform: scaleX(0);
-  transform-origin: bottom left;
-  transition: transform 300ms ease-in;
+  transform-origin: bottom left; 
+  /* transition: transform 300ms ease-in; */
 }
 
 .mobile-nav-active {
   transform: scaleX(1);
   transform-origin: bottom left;
+  opacity: 1;
 }
 
 /* PAGE ONE

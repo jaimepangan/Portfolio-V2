@@ -49,5 +49,6 @@ const navItems = document.getElementById('display-mobile-nav');
 navIcon.onclick = function() {
     navPage.classList.toggle('mobile-active');
     navItems.classList.toggle('mobile-nav-active');
+    navItems.style.transition = 'all 300ms ease-in';
 }
 
