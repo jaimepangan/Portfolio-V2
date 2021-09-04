@@ -11,6 +11,21 @@ html {
     height: 10vh;
   }
 
+  .space-third {
+    height: 10vh;
+    background-color: hsl(192, 100%, 12%);
+  }
+
+  .space-four {
+    height: 10vh;
+    background-color: hsl(39, 65%, 95%);
+  }
+
+  .space-five {
+    height: 10vh;
+    background-color: hsla(191, 96%, 18%);
+  }
+
   .bar-space-top {
     height: 10px;
   }
@@ -83,6 +98,10 @@ html {
     margin: 50px 10px;
 }
 
+#page-one-header h1 {
+  padding: 20px;
+}
+
 /* NAVIGATION
 ======================================= */
 
@@ -138,11 +157,17 @@ html {
 
 #about-header {
   width: 80%;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: left;
   margin-left: 55px;
+}
+
+@media only screen and (max-width: 480px) {
+  #about-header {
+    margin-left: 35px;
+  }
 }
 
 #about-myself p{
@@ -185,7 +210,7 @@ html {
   margin: 25px;
   width: 350px;
   /* height: 70vh; */
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 5%;
   display: grid;
   grid-template-columns: 1fr;
@@ -227,7 +252,7 @@ html {
 
 #page-four {
   height: 50vh;
-  background: cadetblue;
+  background: hsl(39, 65%, 95%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,13 +270,14 @@ html {
 }
 
 .contact-photo {
-  margin: 40px;
+  margin: 40px 15px;
 }
 
 .contact-photo img {
   width: 100%;
   max-width: 400px;
   height: auto;
+  border-radius: 25px;
 }
 
  @media only screen and (max-width: 500px) {
@@ -262,6 +288,7 @@ html {
 
 .contact-submit {
   border: 1px solid gray;
+  border-radius: 5%;
   padding: 20px;
   width: 600px;
   margin: 10px;
@@ -294,4 +321,5 @@ textarea {
 .form-submit button{
   text-align: center;
   padding: 5px;
+  width: 15%;
 }
