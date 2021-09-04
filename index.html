@@ -31,12 +31,12 @@
                     <li class="mobile-nav-list"><a href="#page-two" id="about-mobile">ABOUT</a></li>
                     <li class="mobile-nav-list"><a href="#page-three" id="experience-mobile">EXPERIENCE</a></li>
                     <li class="mobile-nav-list">Projects</li>
-                    <li class="mobile-nav-list">Contact</li>
+                    <li class="mobile-nav-list"><a href="#page-five" id="contact-mobile">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- PAGE ONE -->
+    <!-- PAGE ONE ABOUT -->
     <div id="page-one">
         <header id="page-one-header">
             <h2 id="header-name">Jaime Pangan</h2>
@@ -47,7 +47,7 @@
                 <li class="list-item"><a href="#page-two">ABOUT</a></li>
                 <li class="list-item"><a href="#page-three">EXPERIENCE</a></li>
                 <li class="list-item">PROJECTS</li>
-                <li class="list-item">CONTACT</li>
+                <li class="list-item"><a href="#page-five">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -63,11 +63,11 @@
             <li class="page-two-list"><a href="#page-two" id="li-About">About</a></li>
             <li class="page-two-list"><a href="#page-three" id="li-Experience">Experience</a></li>
             <li class="page-two-list" id="li-Projects">Projects</li>
-            <li class="page-two-list" id="li-Contact">Contact</li>
+            <li class="page-two-list"><a href="#page-five" id="li-Contact">Contact</a></li>
         </ul>
         <!-- MOVE ID TO Anchor TAG ONCE FINISHED -->
     </nav>
-    <!-- PAGE TWO -->
+    <!-- PAGE TWO ABOUT -->
     <div id="page-two">
         <div class="space">
         </div>
@@ -82,7 +82,9 @@
     </div>
     <div class="space">
     </div>
-    <!-- PAGE THREE -->
+    <!-- PAGE THREE EXPERIENCE -->
+    <div class="space">
+    </div>
     <div id="page-three">
         <div class="space">
         </div>
@@ -147,6 +149,52 @@
         </div>
     </div>
     <div class="space">
+    </div>
+    <!-- PAGE FOUR PROJECTS -->
+    <div id="page-four">
+        <h2>TO FILL</h2>
+    </div>
+     <!-- PAGE FIVE CONTACT -->
+     <div class="space">
+    </div>
+    <div class="space">
+    </div>
+     <div id="page-five">
+         <div class="contact-photo">
+             <img src="./Resources/Portfolio-Image.jpg" alt="photo of me">
+         </div>
+         <div class="contact-submit">
+            <form action="https://formsubmit.co/jaime_pangan@dlsu.edu.ph" method="POST">
+                <section class="contact-header">
+                    <h2>Contact Me</h2>
+                    <br>
+                    <p>Interseted in meeting me? Please fill out this form</p>
+                    <br>
+                </section>
+                <section class="form-details">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </section>
+                <br>
+                <section class="form-details">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                </section>
+                <br>
+                <section class="form-details">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="16" placeholder="You are hired." required></textarea>
+                </section>
+                <br>
+                <section class="form-submit">
+                <button type="submit">Send</button>
+                </section>
+            </form>
+         </div>
+     </div>
+     <div class="space">
     </div>
 </body>
 </html>

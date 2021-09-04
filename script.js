@@ -47,6 +47,7 @@ const navPage = document.getElementById('mobile-nav');
 const navItems = document.getElementById('display-mobile-nav');
 const aboutMobile = document.getElementById('about-mobile');
 const experienceMobile = document.getElementById('experience-mobile');
+const contactMobile = document.getElementById('contact-mobile');
 
 let clearNav = function() {
     navPage.classList.toggle('mobile-active');
@@ -57,4 +58,5 @@ let clearNav = function() {
 aboutMobile.onclick = clearNav;
 navIcon.onclick = clearNav;
 experienceMobile.onclick = clearNav;
+contactMobile.onclick = clearNav;
 

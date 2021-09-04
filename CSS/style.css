@@ -205,6 +205,18 @@ html {
     }
 }
 
+@media only screen and (max-height: 580px) {
+    #about-header span {
+        font-size: 3.3rem;
+    }
+}
+
+@media only screen and (max-height: 480px) and (max-width: 480px) {
+    #about-header span {
+        font-size: 2.3rem;
+    }
+}
+
 #about-myself p {
     font-family: 'Mulish', sans-serif;
 }
@@ -269,4 +281,26 @@ html {
     .card-details p, .card-details li {
         font-size: .8rem;
     }
+}
+
+/* CONTACT
+====================================== */
+
+.contact-header h2 {
+    font-family: 'Merriweather', serif;
+}
+
+.contact-header p {
+    font-family: 'Mulish', sans-serif;
+    font-size: .9rem;
+    color: grey;
+}
+
+.form-details label {
+    font-family: 'Mulish', sans-serif;
+    font-size: .9rem;
+}
+
+.form-submit button {
+    font-family: 'Merriweather', serif;
 }
